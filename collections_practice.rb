@@ -22,3 +22,14 @@ def contain_a(array)
 end
 newarray
 end
+
+def first_wa(array)
+  newstring = ""
+  array.each do |i|
+  if i[0..1] == "wa"
+    newstring << i
+    break
+  end
+  end
+  newstring
+end
